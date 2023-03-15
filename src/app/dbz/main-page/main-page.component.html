@@ -1,0 +1,17 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-characters
+            [characters]="characters">
+        </app-characters>
+    </div>
+    <div class="col">
+        <app-create-character
+            [characterName]="characterName"
+            [characterPower]="characterPower"
+            (onCreateCharacter)="addCharacter($event)">
+        </app-create-character>
+    </div>
+</div>
