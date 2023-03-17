@@ -3,15 +3,13 @@
 
 <div class="row">
     <div class="col">
-        <app-characters
-            [characters]="characters">
+        <app-characters>
         </app-characters>
     </div>
     <div class="col">
         <app-create-character
             [characterName]="characterName"
-            [characterPower]="characterPower"
-            (onCreateCharacter)="addCharacter($event)">
+            [characterPower]="characterPower">
         </app-create-character>
     </div>
 </div>
